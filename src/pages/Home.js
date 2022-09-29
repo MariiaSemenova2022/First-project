@@ -15,10 +15,11 @@ const Home = () => {
     <section className="content">
       <h3>Welcome to the NeverLand , we’ve got fun and games…
       plus coffee, food, and wifi!</h3>
-      <div className="ahome">
+      <div className="home">
       <VideoJS options={videoJsOptions} />
       </div>
-      <p className="relax">Let the kids explore our Kids Paradise while you work, relax or catch up with friends in our cozy Kids cafe</p>
+      <br></br>
+           <p className="relax">Let the kids explore our Kids Paradise<br></br> while you work, relax or catch up with friends<br></br> in our cozy Kids cafe</p>
       <footer> 
         <div className="icons">
     

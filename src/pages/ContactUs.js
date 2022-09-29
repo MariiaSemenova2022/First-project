@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ContactUs = ({ setUser }) => {
   const [name, setName] = useState('');
@@ -15,42 +15,43 @@ const ContactUs = ({ setUser }) => {
    navigate('/dashboard');
   };
 
-  return (
-    <section className="section">
-      <form className="form" onSubmit={handleSubmit}>
-        <h3>Contact Us</h3>
-        <div className="form-row">
+   return (
+    <section className='section'>
+    <iframe className='map' src="https://www.google.com/maps/embed/v1/place?q=Morden,+Манитоба,+Канада&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+        <form className='form' onSubmit={handleSubmit}>
+        <h4 className='contact'>Contact Us</h4>
+        <div className='form-row'>
           <input
-            type="text"
-            className="form-input"
-            id="name"
-            placeholder="Name*"
+            type='text'
+            className='form-input'
+            id='name'
+            placeholder='Name*'
             value size="30"
             required
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
         
-          <label htmlFor="email" className="form-label">
+          <label htmlFor='email' className='form-label'>
           </label>
           <input
-            type="email"
-            className="form-input"
-            id="email"
-            placeholder="Email*"
-            value size="30"
+            type='email'
+            className='form-input'
+            id='email'
+            placeholder='Email*'
+            value size='30'
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <br></br>
-        <label htmlFor="email" className="form-label">
+        <label htmlFor='email' className='form-label'>
             </label>
           <textarea
-            type="message"
-            className="form-input"
-            id="message"
+            type='message'
+            className='form-input'
+            id='message'
             placeholder="Message*"
             rows="10"
             cols="80"
@@ -64,4 +65,5 @@ const ContactUs = ({ setUser }) => {
     </section>
   );
 };
+
 export default ContactUs;

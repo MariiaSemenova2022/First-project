@@ -1,4 +1,4 @@
-import Hamburger from "../images/hamburger.jpg";
+import  Hamburger  from "../images/hamburger.jpg";
 import Icecream from "../images/ice-cream.jpg";
 import Pasta from "../images/pasta.jpg";
 import Pancake from "../images/pancake.jpg";
@@ -8,32 +8,34 @@ import Drink from "../images/drinks.jpg";
 export const MenuList = [
     {
         name: "Classic burger",
-        image: "Hamburger",
+        image: Hamburger,
         price: 7.25, 
     },
     {
-        name: "Natural ice-cream",
-        image: "Icecream",
-        price: 7.50, 
+        name: "Beverages",
+        image: Drink,
+        price: 6.55, 
     },
+
     {
         name: "Italian pasta",
-        image: "Pasta",
-        price: 12.00, 
+        image: Pasta,
+        price: 12.45, 
     },
     {
         name: "Homemade pancake",
-        image: "Pancake",
-        price: 9.00, 
+        image: Pancake,
+        price: 9.99, 
     },
     {
         name: "Delicious pizza",
-        image: "Pizza",
-        price: 10.00, 
+        image: Pizza,
+        price: 10.28, 
     },
     {
-        name: "Beverages",
-        image: "Drink",
-        price: 6.00, 
+        name: "Natural ice-cream",
+        image: Icecream,
+        price: 7.55, 
     },
+
 ];
